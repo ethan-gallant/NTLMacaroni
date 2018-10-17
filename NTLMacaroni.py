@@ -34,9 +34,9 @@ counter = 0
 
 for line in input_file:
     parse_line(line)
-    ++counter
+    counter += 1
     if counter % 100 == 0:
-        print("Entries Formatted" + counter)
+        print("Entries Formatted" + str(counter))
 
 print("New file created with k:v format. The file is called " + os.path.basename(ENCODED_PATH) + ".formatted")
 
